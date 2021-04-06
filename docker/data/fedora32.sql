@@ -251,6 +251,7 @@ fedora-system:FedoraObject-3.0	content model object for all objects	a	fedoraadmi
 fedora-system:ServiceDefinition-3.0	content model object for service definition objects	a	fedoraadmin	1214975383796	1617697362384	1214975384375	 content model object for service definition objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedefinition-3.0 .	\N	\N	\N	\N	\N
 fedora-system:ServiceDeployment-3.0	content model object for service deployment objects	a	fedoraadmin	1214975383796	1617697362465	1214975384406	 content model object for service deployment objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedeployment-3.0 .	\N	\N	\N	\N	\N
 authority-person:113	authority person 113	d	fedoraadmin	1616591003125	1617697476516	1616591003125	 authority person 113 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:113 .	\N	\N	\N	\N	\N
+authority-person:124	authority person 124	a	fedoraadmin	1617703926661	1617703956733	1617703926661	 authority person 124 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:124 .	\N	\N	\N	\N	\N
 \.
 
 
@@ -282,6 +283,7 @@ fedora-system:FedoraObject-3.0	1		A	Content Model Object for All Objects
 fedora-system:ServiceDefinition-3.0	1		A	Content Model Object for Service Definition Objects
 fedora-system:ServiceDeployment-3.0	1		A	Content Model Object for Service Deployment Objects
 authority-person:113	4	fedoraAdmin	A	Authority person 113
+authority-person:124	2	fedoraAdmin	A	Authority person 124
 \.
 
 
@@ -321,6 +323,7 @@ COPY public.objectpaths (tokendbid, token, path) FROM stdin;
 42	fedora-system:FedoraObject-3.0	/home/fedora/fedora32/data/objects/2021/0406/08/22/fedora-system_FedoraObject-3.0
 43	fedora-system:ServiceDefinition-3.0	/home/fedora/fedora32/data/objects/2021/0406/08/22/fedora-system_ServiceDefinition-3.0
 44	fedora-system:ServiceDeployment-3.0	/home/fedora/fedora32/data/objects/2021/0406/08/22/fedora-system_ServiceDeployment-3.0
+45	authority-person:124	/home/fedora/fedora32/data/objects/2021/0406/10/12/authority-person_124
 \.
 
 
@@ -328,7 +331,7 @@ COPY public.objectpaths (tokendbid, token, path) FROM stdin;
 -- Name: objectpaths_tokendbid_seq; Type: SEQUENCE SET; Schema: public; Owner: fedoraAdmin
 --
 
-SELECT pg_catalog.setval('public.objectpaths_tokendbid_seq', 44, true);
+SELECT pg_catalog.setval('public.objectpaths_tokendbid_seq', 45, true);
 
 
 --
