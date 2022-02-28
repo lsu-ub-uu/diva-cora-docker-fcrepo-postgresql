@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.19
--- Dumped by pg_dump version 9.6.19
+-- Dumped from database version 9.6.23
+-- Dumped by pg_dump version 9.6.23
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -247,11 +247,12 @@ authority-person:123	authority person 123	a	fedoraadmin	1616669855554	1616669874
 authority-person:124	authority person 124	a	fedoraadmin	1617703926661	1617703956733	1617703926661	 authority person 124 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:124 .	\N	\N	\N	\N	\N
 authority-person:113	authority person 113	d	fedoraadmin	1616591003125	1617712472668	1616591003125	 authority person 113 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:113 .	\N	\N	\N	\N	\N
 authority-person:114	authority person 114	a	fedoraadmin	1616591044305	1625059112673	1616591044305	 authority person 114 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:114 .	\N	\N	\N	\N	\N
-fedora-system:ContentModel-3.0	content model object for content model objects	a	fedoraadmin	1214975383796	1643272783738	1214975384015	 content model object for content model objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:contentmodel-3.0 .	\N	\N	\N	\N	\N
-fedora-system:FedoraObject-3.0	content model object for all objects	a	fedoraadmin	1214975383796	1643272784204	1214975384359	 content model object for all objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:fedoraobject-3.0 .	\N	\N	\N	\N	\N
-fedora-system:ServiceDefinition-3.0	content model object for service definition objects	a	fedoraadmin	1214975383796	1643272784298	1214975384375	 content model object for service definition objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedefinition-3.0 .	\N	\N	\N	\N	\N
-fedora-system:ServiceDeployment-3.0	content model object for service deployment objects	a	fedoraadmin	1214975383796	1643272784388	1214975384406	 content model object for service deployment objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedeployment-3.0 .	\N	\N	\N	\N	\N
 authority-person:106	authority person 106	a	fedoraadmin	1615554728426	1643273047828	1615554728426	 authority person 106 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:106 .	\N	\N	\N	\N	\N
+fedora-system:ContentModel-3.0	content model object for content model objects	a	fedoraadmin	1214975383796	1646058074042	1214975384015	 content model object for content model objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:contentmodel-3.0 .	\N	\N	\N	\N	\N
+fedora-system:FedoraObject-3.0	content model object for all objects	a	fedoraadmin	1214975383796	1646058074305	1214975384359	 content model object for all objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:fedoraobject-3.0 .	\N	\N	\N	\N	\N
+fedora-system:ServiceDefinition-3.0	content model object for service definition objects	a	fedoraadmin	1214975383796	1646058074372	1214975384375	 content model object for service definition objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedefinition-3.0 .	\N	\N	\N	\N	\N
+fedora-system:ServiceDeployment-3.0	content model object for service deployment objects	a	fedoraadmin	1214975383796	1646058074439	1214975384406	 content model object for service deployment objects .	\N	\N	\N	\N	\N	\N	\N	\N	 fedora-system:servicedeployment-3.0 .	\N	\N	\N	\N	\N
+authority-person:125	authority person 125	a	fedoraadmin	1646058286171	1646058422808	1646058286171	 authority person 125 .	\N	\N	\N	\N	\N	\N	\N	\N	 authority-person:125 .	\N	\N	\N	\N	\N
 \.
 
 
@@ -279,11 +280,12 @@ authority-person:123	2	fedoraAdmin	A	Authority person 123
 authority-person:124	2	fedoraAdmin	A	Authority person 124
 authority-person:113	5	fedoraAdmin	A	Authority person 113
 authority-person:114	3	fedoraAdmin	A	Authority person 114
+authority-person:106	3	fedoraAdmin	A	Authority person 106
 fedora-system:ContentModel-3.0	1		A	Content Model Object for Content Model Objects
 fedora-system:FedoraObject-3.0	1		A	Content Model Object for All Objects
 fedora-system:ServiceDefinition-3.0	1		A	Content Model Object for Service Definition Objects
 fedora-system:ServiceDeployment-3.0	1		A	Content Model Object for Service Deployment Objects
-authority-person:106	3	fedoraAdmin	A	Authority person 106
+authority-person:125	2	fedoraAdmin	A	Authority person 125
 \.
 
 
@@ -320,10 +322,11 @@ COPY public.objectpaths (tokendbid, token, path) FROM stdin;
 35	authority-person:122	/home/fedora/fedora32/data/objects/2021/0325/10/56/authority-person_122
 36	authority-person:123	/home/fedora/fedora32/data/objects/2021/0325/10/57/authority-person_123
 45	authority-person:124	/home/fedora/fedora32/data/objects/2021/0406/10/12/authority-person_124
-50	fedora-system:ContentModel-3.0	/home/fedora/fedora32/data/objects/2022/0127/08/39/fedora-system_ContentModel-3.0
-51	fedora-system:FedoraObject-3.0	/home/fedora/fedora32/data/objects/2022/0127/08/39/fedora-system_FedoraObject-3.0
-52	fedora-system:ServiceDefinition-3.0	/home/fedora/fedora32/data/objects/2022/0127/08/39/fedora-system_ServiceDefinition-3.0
-53	fedora-system:ServiceDeployment-3.0	/home/fedora/fedora32/data/objects/2022/0127/08/39/fedora-system_ServiceDeployment-3.0
+54	fedora-system:ContentModel-3.0	/home/fedora/fedora32/data/objects/2022/0228/14/21/fedora-system_ContentModel-3.0
+55	fedora-system:FedoraObject-3.0	/home/fedora/fedora32/data/objects/2022/0228/14/21/fedora-system_FedoraObject-3.0
+56	fedora-system:ServiceDefinition-3.0	/home/fedora/fedora32/data/objects/2022/0228/14/21/fedora-system_ServiceDefinition-3.0
+57	fedora-system:ServiceDeployment-3.0	/home/fedora/fedora32/data/objects/2022/0228/14/21/fedora-system_ServiceDeployment-3.0
+58	authority-person:125	/home/fedora/fedora32/data/objects/2022/0228/14/24/authority-person_125
 \.
 
 
@@ -331,7 +334,7 @@ COPY public.objectpaths (tokendbid, token, path) FROM stdin;
 -- Name: objectpaths_tokendbid_seq; Type: SEQUENCE SET; Schema: public; Owner: fedoraAdmin
 --
 
-SELECT pg_catalog.setval('public.objectpaths_tokendbid_seq', 53, true);
+SELECT pg_catalog.setval('public.objectpaths_tokendbid_seq', 58, true);
 
 
 --
